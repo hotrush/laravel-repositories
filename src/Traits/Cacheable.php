@@ -44,6 +44,7 @@ trait Cacheable
                 $this->getCacheDriver(),
                 $this->getCacheLifetime(),
                 $this->relations,
+                $this->countRelations,
                 $this->where,
                 $this->whereIn,
                 $this->whereNotIn,
@@ -184,7 +185,7 @@ trait Cacheable
                 }
             }
 
-            $this->getContainer('events')->fire($this->getRepositoryId().'.entity.cache.flushed', [$this]);
+            $this->getContainer('events')->dispatch($this->getRepositoryId().'.entity.cache.flushed', [$this]);
         }
 
         return $this;
