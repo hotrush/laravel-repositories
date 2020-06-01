@@ -1,21 +1,22 @@
 # Rinvex Repository
 
+⚠️ **This package is abandoned and no longer maintained. No replacement package was suggested.** ⚠️
+
+👉 [Contact me if you are interested in maintaining it!](https://twitter.com/Omranic)
+
+
 ![Rinvex Repository Diagram](https://rinvex.com/assets/frontend/layout/img/products/rinvex.repository.v2.diagram.png)
 
 **Rinvex Repository** is a simple, intuitive, and smart implementation of Active Repository with extremely flexible & granular caching system for Laravel, used to abstract the data layer, making applications more flexible to maintain.
 
 [![Packagist](https://img.shields.io/packagist/v/rinvex/laravel-repositories.svg?label=Packagist&style=flat-square)](https://packagist.org/packages/rinvex/laravel-repositories)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/rinvex/laravel-repositories.svg?label=Scrutinizer&style=flat-square)](https://scrutinizer-ci.com/g/rinvex/laravel-repositories/)
-[![Code Climate](https://img.shields.io/codeclimate/github/rinvex/laravel-repositories.svg?label=CodeClimate&style=flat-square)](https://codeclimate.com/github/rinvex/laravel-repositories)
 [![Travis](https://img.shields.io/travis/rinvex/laravel-repositories.svg?label=TravisCI&style=flat-square)](https://travis-ci.org/rinvex/laravel-repositories)
 [![StyleCI](https://styleci.io/repos/61269204/shield)](https://styleci.io/repos/61269204)
 [![License](https://img.shields.io/packagist/l/rinvex/laravel-repositories.svg?label=License&style=flat-square)](https://github.com/rinvex/laravel-repositories/blob/develop/LICENSE)
 
 
 💡 If you are looking for **Laravel 5.5** support, use the `dev-develop` branch. It's stable but not tagged yet since test suites isn't complete. 💡
-
-
-⚠️ [This package is looking for new maintainer, read details or takeover if interested!](https://github.com/rinvex/laravel-repositories/issues/156) ⚠️
 
 
 ## Features
@@ -903,4 +904,4 @@ Rinvex is a software solutions startup, specialized in integrated enterprise sol
 
 This software is released under [The MIT License (MIT)](LICENSE).
 
-(c) 2016-2019 Rinvex LLC, Some rights reserved.
+(c) 2016-2020 Rinvex LLC, Some rights reserved.
