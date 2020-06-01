@@ -5,10 +5,13 @@ declare(strict_types=1);
 namespace Rinvex\Repository\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Rinvex\Support\Traits\ConsoleTools;
 use Rinvex\Repository\Listeners\RepositoryEventListener;
 
 class RepositoryServiceProvider extends ServiceProvider
 {
+    use ConsoleTools;
+
     /**
      * The repository alias pattern.
      *
@@ -33,10 +36,8 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            // Publish config
-            $this->publishes([realpath(__DIR__.'/../../config/config.php') => config_path('rinvex.repository.php')], 'rinvex-repository-config');
-        }
+        // Publish config
+        $this->publishesConfig('rinvex/laravel-repositories');
 
         // Subscribe the registered event listener
         $this->app['events']->subscribe('rinvex.repository.listener');
